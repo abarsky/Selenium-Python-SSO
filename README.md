@@ -1,2 +1,2 @@
-# Selenium-Python-SSO
-Selenium test autoamtion framework using python for SSO project (TMS_SSO_Prod.py)
+# Selenium Python Framework
+2 files Selenium test autoamtion framework using python 2
