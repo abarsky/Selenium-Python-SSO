@@ -849,10 +849,10 @@ def runTests():
     enterVariable('$devEnv','https://sso.groovv.dev')
     currentCase='TMS SSO Login'
     currentStep='Set Prod User'
-    enterVariable('$prodUserName','alextestprod')
+    enterVariable('$prodUserName','XXXprod_user')
     currentCase='TMS SSO Login'
     currentStep='Set QA User'
-    enterVariable('$qaUserName','ssoautotest')
+    enterVariable('$qaUserName','XXXqa_user')
     currentCase='TMS SSO Login'
     currentStep='Go to SSO site'
     goToLink(userVariables['$prodEnv'])
@@ -861,7 +861,7 @@ def runTests():
     writeIn('Login_username',userVariables['$prodUserName'],'id')
     currentCase='TMS SSO Login'
     currentStep='Enter password'
-    writeIn('Login_password','Tester#1','id')
+    writeIn('Login_password','secure_pwd','id')
     currentCase='TMS SSO Login'
     currentStep='Click Login'
     clickOn('btn-primary','class_name')
