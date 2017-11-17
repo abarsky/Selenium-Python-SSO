@@ -43,15 +43,6 @@ def createFolder():
     except:
         test_results.write("[ERROR] Could not create the folder for screenshots\n")
 
-# def createFileForTestResults():
-#     try:
-#         global test_results
-#         test_results = open("test_results.txt", "w")
-#         timestamp_for_file=time.strftime("%Y-%m-%d %H:%M:%S")
-#         test_results.write("Started test "+timestamp_for_file+"\n")
-#     except:
-#         print "Something went wrong while trying to create the file for test results"
-
 def createFileForTestResults():
     try:
         global test_results
@@ -446,15 +437,6 @@ def pressKey(keyToPress):
                 genericSelector.send_keys(Keys.UP);
         except:
             test_results.write("[ERROR] Could not press '"+keyToPress+"\n")
-
-
-# def createFolder():
-#     try:
-#         global folderName
-#         folderName = time.strftime("%m.%d-%H.%M")
-#         os.mkdir(folderName)
-#     except:
-#         test_results.write("[ERROR] Could not create the folder for screenshots\n")
 
 def pauseForDuration(duration):
     try:
